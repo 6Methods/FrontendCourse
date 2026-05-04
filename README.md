@@ -47,10 +47,10 @@
 
 ```bash
 cd ~/Desktop
-git clone https://github.com/6Methods/FrontendObsidianCourse.git
+git clone https://github.com/6Methods/FrontendCourse.git
 ```
 
-Затем в Obsidian → **Open folder as vault** → выбери `FrontendObsidianCourse/FrontendCourse/` (базовый) или `FrontendObsidianCourse/FrontendAdvanced/` (продвинутый). Точка входа — `00-Start-Here.md` в корне vault'а.
+Затем в Obsidian → **Open folder as vault** → выбери **внутреннюю** папку `FrontendCourse/FrontendCourse/` (базовый) или `FrontendCourse/FrontendAdvanced/` (продвинутый) — именно подпапку, а не корень репозитория. Точка входа — `00-Start-Here.md` в корне vault'а.
 
 </details>
 
@@ -109,12 +109,12 @@ cd ~/Desktop
 Теперь скопируй и вставь команду клонирования (на Mac — `Cmd+V`, на Windows — правый клик в окне терминала или `Ctrl+Shift+V`):
 
 ```bash
-git clone https://github.com/6Methods/FrontendObsidianCourse.git
+git clone https://github.com/6Methods/FrontendCourse.git
 ```
 
 Нажми Enter. Git начнёт скачивать — увидишь строки вроде `Receiving objects: 100% (1234/1234), done.`. Подожди, пока всё закончится (10–60 секунд в зависимости от интернета).
 
-Когда вернётся обычный курсор — на Рабочем столе появится папка **FrontendObsidianCourse**. Можешь убедиться — открой Finder/Проводник, зайди на Рабочий стол, она там.
+Когда вернётся обычный курсор — на Рабочем столе появится папка **FrontendCourse** (это клон репозитория). Можешь убедиться — открой Finder/Проводник, зайди на Рабочий стол, она там. Внутри увидишь две папки-vault'а: `FrontendCourse` (базовый курс — да, имя совпадает с именем репозитория, это нормально) и `FrontendAdvanced` (продвинутый).
 
 > **Если увидишь ошибку `Permission denied (publickey)`** — ты случайно скопировал SSH-ссылку (`git@github.com:...`). Используй именно HTTPS-ссылку как выше (`https://github.com/...`) — она работает без настройки SSH-ключей.
 >
@@ -124,14 +124,14 @@ git clone https://github.com/6Methods/FrontendObsidianCourse.git
 
 Запусти Obsidian. На стартовом экране нажми **Open folder as vault** (если стартовый экран не появился — нажми иконку папки с плюсиком в нижнем левом углу).
 
-В диалоге выбора папки пройди: **Рабочий стол → FrontendObsidianCourse →** и выбери одну из:
+В диалоге выбора папки пройди: **Рабочий стол → FrontendCourse** (это склонированный репозиторий) **→** и зайди **внутрь**, выбрав одну из подпапок:
 
-- **`FrontendCourse`** — если начинаешь с нуля или хочешь дойти до уровня junior. **Это вариант по умолчанию**, если сомневаешься — выбирай его.
+- **`FrontendCourse`** (внутренняя папка с тем же именем) — если начинаешь с нуля или хочешь дойти до уровня junior. **Это вариант по умолчанию**, если сомневаешься — выбирай его.
 - **`FrontendAdvanced`** — если у тебя уже 1+ год опыта с React и TypeScript, и ты целишься в senior.
 
 Нажми **Open**.
 
-> **Важно:** выбери именно подпапку (`FrontendCourse` или `FrontendAdvanced`), а не корневую `FrontendObsidianCourse`. Это два независимых vault'а — Obsidian работает с одним за раз.
+> **Важно:** имя репозитория и имя базового vault'а совпадают (оба — `FrontendCourse`), это сбивает с толку. Финальный путь должен выглядеть как `Desktop/FrontendCourse/FrontendCourse` (для базового) или `Desktop/FrontendCourse/FrontendAdvanced` (для продвинутого) — то есть **два уровня вложенности** от Рабочего стола. Если открыл просто `Desktop/FrontendCourse`, Obsidian увидит и README, и оба vault'а внутри как файлы — это неправильно.
 
 Obsidian спросит «Trust author and enable plugins?». Можно ответить **Trust author** — этот репозиторий не подгружает плагины автоматически, только настройки оформления.
 
